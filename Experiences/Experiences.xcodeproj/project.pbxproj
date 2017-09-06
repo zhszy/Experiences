@@ -13,6 +13,7 @@
 		B187A5A61F5F8DA800327D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B187A5A41F5F8DA800327D40 /* Main.storyboard */; };
 		B187A5A81F5F8DA800327D40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B187A5A71F5F8DA800327D40 /* Assets.xcassets */; };
 		B187A5AB1F5F8DA800327D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B187A5A91F5F8DA800327D40 /* LaunchScreen.storyboard */; };
+		B1F044AB1F5FC76700F45A0B /* EventForwardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F044AA1F5FC76700F45A0B /* EventForwardManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B187A5A71F5F8DA800327D40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B187A5AA1F5F8DA800327D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B187A5AC1F5F8DA800327D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F044A91F5FC76700F45A0B /* EventForwardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventForwardManager.h; sourceTree = "<group>"; };
+		B1F044AA1F5FC76700F45A0B /* EventForwardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventForwardManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 				B187A59F1F5F8DA800327D40 /* AppDelegate.m */,
 				B187A5A11F5F8DA800327D40 /* ViewController.h */,
 				B187A5A21F5F8DA800327D40 /* ViewController.m */,
+				B187A5B21F5F8F6F00327D40 /* Manager */,
 				B187A5A41F5F8DA800327D40 /* Main.storyboard */,
 				B187A5A71F5F8DA800327D40 /* Assets.xcassets */,
 				B187A5A91F5F8DA800327D40 /* LaunchScreen.storyboard */,
@@ -77,6 +81,23 @@
 				B187A59C1F5F8DA800327D40 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B187A5B21F5F8F6F00327D40 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B1F044A81F5FC76700F45A0B /* 方法分发管理 */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B1F044A81F5FC76700F45A0B /* 方法分发管理 */ = {
+			isa = PBXGroup;
+			children = (
+				B1F044A91F5FC76700F45A0B /* EventForwardManager.h */,
+				B1F044AA1F5FC76700F45A0B /* EventForwardManager.m */,
+			);
+			path = "方法分发管理";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +173,7 @@
 			files = (
 				B187A5A31F5F8DA800327D40 /* ViewController.m in Sources */,
 				B187A5A01F5F8DA800327D40 /* AppDelegate.m in Sources */,
+				B1F044AB1F5FC76700F45A0B /* EventForwardManager.m in Sources */,
 				B187A59D1F5F8DA800327D40 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +331,7 @@
 				B187A5B11F5F8DA800327D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
